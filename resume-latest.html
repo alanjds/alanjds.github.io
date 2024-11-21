@@ -1,0 +1,1508 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Alan Justino da Silva</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+  <style>
+  /********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/****************
+*	COMMONS
+****************/
+
+body,
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 13px;
+  color: #40484f;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.46153846;
+  text-align: left;
+}
+
+p {
+  display: block;
+}
+
+a {
+  color: #0095ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0c65a5;
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: outside;
+  margin-left: 1.3em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.67rem;
+}
+
+h3 {
+  font-size: 1.27rem;
+}
+
+em {
+  color: #757575;
+}
+
+blockquote {
+  margin-top: 1em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* main container */
+
+#resume {
+  padding: 1.5rem;
+}
+
+/* every section wrapper */
+
+.section {
+  margin-bottom: 1rem;
+}
+
+section .location {
+  margin-right: 0.5em;
+  color: #606d76;
+  font-weight: 700;
+}
+
+#contact {
+  margin-top: 0.5rem;
+}
+
+#profiles .item {
+  padding: 0;
+}
+
+#header>#profiles,
+#header>#contact,
+#skills,
+#languages,
+#interests {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+#header>div {
+  line-height: 1.5;
+}
+
+#header>div>div {
+  margin-right: 1.2em;
+}
+
+#header h1.name {
+  font-size: 2.8rem;
+  font-weight: 100;
+  line-height: 100%;
+}
+
+#header h2.label {
+  color: #202931;
+  font-size: 1.47rem;
+  font-weight: 300;
+}
+
+#header .image {
+  width: 11em;
+  float: right;
+  border-radius: 4px;
+}
+
+.main-summary {
+  background: #f1f8ff;
+  padding: 1.2em 1em;
+  margin-top: 1rem;
+}
+
+.main-summary p {
+  margin: 0;
+}
+
+.section-title {
+  display: inline-block;
+  background: #fff;
+  padding: 0 1em 0.3em 0;
+  color: #ff6d1f;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.section>header {
+  position: relative;
+}
+
+.fa {
+  margin-right: 0.25em;
+}
+
+.section>header::after {
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  height: 1px;
+  background: #ccc;
+  content: "";
+  width: 100%;
+  z-index: -100;
+  display: block;
+}
+
+.section.main-summary>section {
+  margin: 0;
+}
+
+.section>section>header {
+  font-size: 1.38rem;
+  position: relative;
+  margin-top: 0.7em;
+}
+
+.section>section>header:first-of-type {
+  margin: 0;
+}
+
+.section>section>header .space-left {
+  position: absolute;
+  left: -1.56rem;
+  top: 5px;
+  color: #aaa;
+  line-height: 1;
+  opacity: 0;
+}
+
+.position,
+.company,
+.organization,
+.institution,
+.date,
+.area,
+.studyType,
+.title,
+.awarder {
+  display: inline;
+}
+
+.position,
+.studyType,
+.area,
+.title,
+.language,
+.name {
+  font-weight: 600;
+}
+
+.company::before,
+.institution::before,
+.organization::before,
+.awarder::before {
+  content: "at ";
+}
+
+.company,
+.institution,
+.organization,
+.awarder {
+  color: #606d76;
+  font-weight: 400;
+}
+
+.section header .date {
+  display: block;
+  font-size: 1rem;
+  padding: 0.1em 0;
+  color: #606d76;
+  font-weight: 400;
+}
+
+.keywords,
+.courses {
+  margin: 0.5em 0;
+}
+
+.keywords li,
+.courses li {
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+  padding: 4px 5px 5px;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #3e6d8e;
+  background-color: #dfeaf1;
+  border: 0 solid #dfeaf1;
+  white-space: nowrap;
+}
+
+.keywords li:hover,
+.courses li:hover {
+  background: #dfeaf0;
+}
+
+.highlights {
+  margin: 0.5em 0 0 0;
+}
+
+.highlights>li>p {
+  margin-bottom: 0.5em;
+}
+.highlights>li:last-child>p {
+  margin-bottom: 0;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.gpa {
+  clear: both;
+  padding-bottom: 0.5em;
+}
+
+.fa.social {
+  font-size: 1.1em;
+}
+
+/* Social Media Brand Colors */
+
+.google-plus {
+  color: #dd4b39;
+}
+
+.tumblr {
+  color: #32506d;
+}
+
+.foursquare {
+  color: #0072b1;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.linkedin {
+  color: #007bb6;
+}
+
+.pinterest {
+  color: #cb2027;
+}
+
+.dribbble {
+  color: #ea4c89;
+}
+
+.instagram {
+  color: #517fa4;
+}
+
+.twitter {
+  color: #00aced;
+}
+
+.soundcloud {
+  color: #ff3a00;
+}
+
+.wordpress {
+  color: #21759b;
+}
+
+.youtube {
+  color: #bb0000;
+}
+
+.github {
+  color: #171515;
+}
+
+.stack-overflow {
+  color: #828386;
+  position: relative;
+}
+
+.flickr {
+  color: #ff0084;
+}
+
+.reddit {
+  color: #ff4500;
+}
+
+.hacker-news {
+  color: #ff6600;
+}
+
+.stack-overflow::after {
+  position: absolute;
+  left: 0;
+  content: "\f16c";
+  color: #f68a1f;
+  overflow: hidden;
+  height: 100%;
+}
+
+.telegram {
+  color: #2291c3;
+}
+
+#languages .item,
+#skills .item,
+#interests .item {
+  width: 16em;
+  padding: 0 0.5em 0.5em 0;
+  border-bottom: none;
+}
+
+#skills .item {
+  width: 16em;
+}
+
+#skills .item .keywords {
+  width: 15em;
+}
+
+/* Skill chart */
+
+.level {
+  margin-bottom: 0.5em;
+}
+
+.level em {
+  padding-left: 0.2em;
+}
+
+.level .bar {
+  border: 1px solid #ddd;
+  display: block;
+  width: 10em;
+  height: 5px;
+  position: relative;
+}
+
+.level .bar::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  background: black;
+  height: 5px;
+}
+
+.level.beginner .bar::after,
+.level.basic .bar::after {
+  background: #7d7d7d;
+  width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+  background: hsl(120, 17%, 57%);
+  ;
+  width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+  background: hsl(120, 39%, 54%);
+  width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+  background: #59c596;
+  width: 10em;
+}
+
+#references .item {
+  padding-left: 0.5em;
+  border-left: 5px solid #ff6d1f;
+}
+
+.section>section>section {
+  margin-bottom: 1rem;
+}
+
+/******************
+*	HELPER CLASSES
+******************/
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.display {
+  display: block;
+  opacity: 1 !important;
+}
+
+/****************
+*		TABLET
+****************/
+
+@media screen and (min-width: 602px) {
+  #resume {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section header .date {
+    float: right;
+    font-weight: 600;
+    color: #000;
+  }
+}
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+  li {
+    margin-left: 1.5em;
+  }
+
+  #resume {
+    width: 820px;
+    margin: 2rem auto;
+  }
+
+  .section>section>header .space-left {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .section>section:not(.main-summary) {
+    margin-left: 1.67rem;
+  }
+
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "| ";
+  }
+
+  .header-left {
+    float: left;
+    width: 70%;
+    word-break: normal;
+  }
+
+  .publication-item .header-left {
+    width: 82%;
+  }
+
+  .section header .date {
+    padding: 0.2em;
+  }
+
+  .display {
+    display: none;
+  }
+
+  .display:not(.none) {
+    display: block;
+  }
+}
+
+@media print {
+  #profiles a:not(.hide-href-print)::after {
+    content: " (" attr(href) ") ";
+  }
+
+  #resume {
+    margin: 0.1em;
+    padding: 0.1em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.25;
+  }
+
+  @page {
+    margin: 1cm 1.4cm;
+  }
+
+  .item-count {
+    display: none;
+  }
+
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "at ";
+  }
+
+  .main-summary {
+    padding: 0;
+    background: transparent;
+  }
+
+  .section {
+    margin: 0.8rem 0;
+    padding: 0;
+  }
+
+  .section header {
+    padding-bottom: 0.15rem;
+  }
+
+  .section .location {
+    padding-bottom: 0.15rem;
+  }
+
+  .section>section>section {
+    margin: 0 0 1em 0;
+  }
+
+  .section>section>section:last-of-type {
+    margin: 0;
+  }
+
+  .stack-overflow::after {
+    content: "";
+  }
+
+  .fa.social {
+    color: #828386;
+  }
+
+  ul {
+    margin-top: 0.4em;
+  }
+
+  ul,
+  li {
+    padding: 0;
+  }
+
+  ul.keywords li,
+  ul.courses li {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    background: transparent;
+  }
+
+  ul.keywords li::after,
+  ul.courses li::after {
+    padding: 0 0 0 0.1rem;
+    content: " |";
+  }
+
+  ul.keywords::before,
+  ul.courses::before {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  #skills .item {
+    width: calc(100% / 3);
+    padding: 0;
+  }
+
+  .highlights {
+    margin: 0.5em 0 0 0;
+  }
+
+  ul.keywords::before {
+    content: "Skills acquired: ";
+  }
+
+  #skills .keywords::before {
+    content: none;
+  }
+
+  .section p {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.courses::before {
+    content: "Major courses: ";
+  }
+
+  ul.keywords li:last-of-type::after,
+  ul.courses li:last-of-type::after {
+    content: "";
+  }
+
+  .level em {
+    font-style: normal;
+    padding: 0.1em 0;
+  }
+
+  .level .bar {
+    display: none;
+  }
+
+  #profiles .item {
+    padding: 0;
+  }
+
+  .item.display {
+    display: block;
+    opacity: 1 !important;
+  }
+
+  .fa-map-marker-alt:before {
+    padding-left: 0.1em;
+  }
+}
+
+  </style>
+
+  </head>
+  <body>
+
+  <div id="resume">
+    	<header id="header" class="clear">
+    		<div>
+    			<h1 class="name">Alan Justino da Silva</h1>
+    			<h2 class="label">Senior Software Engineer</h2>
+    		</div>
+    
+    		<span class="location">
+    			<span class="city">São Caetano do Sul,</span>
+    			<span class="region">São Paulo,</span>
+    			<span class="countryCode">Brazil</span>
+    		</span>
+    
+    
+    		<div id="contact">
+    			<div class="email">
+    				<span class="far fa-envelope"></span>
+    				<a class="hide-href-print" href="mailto:alan.justino@yahoo.com.br">alan.justino@yahoo.com.br</a>
+    			</div>
+    			<div class="phone">
+    				<span class="fas fa-mobile-alt"></span>
+    				<a class="hide-href-print" href="tel:+55 (11) 998-225-769">+55 (11) 998-225-769</a>
+    			</div>
+    		</div>
+    
+    		<div id="profiles">
+    			<div class="item">
+    				<div class="username">
+    					<span class="fab fa-linkedin linkedin social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://www.linkedin.com/in/alanjustino/">alanjustino</a>
+    					</span>
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fab fa-github github social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://github.com/alanjds">alanjds</a>
+    					</span>
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fab fa-stack-overflow stack-overflow social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://stackoverflow.com/users/798575/alanjds">alanjds</a>
+    					</span>
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fab fa-lastfm lastfm social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://www.last.fm/user/alanjds">alanjds</a>
+    					</span>
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+    
+    	<section class="section">
+    		<section class="main-summary">
+    			<div><p><p>I am a Software Engineer experienced with Python and skills on the full stack &amp; machine learning. Coding commercial Python since 2008, right after leading an infra team to create a XEN cloud. When allowed, I target to build products made to scale.</p><p>Now, I do what is needed from cloud-or-not DevOps to intermediate HTML/CSS/JS coding, mainly using Postgres+Redis and Django or Flask on the backend, although preferring async options.</p><p>Also worked with machine learning and published a paper at an international academic conference.</p><p>I try to merge back my bugfixes when possible. This way I contributed to many projects like Celery, Cassandra, Ansible, DRF, Kivy &amp; RustPython among others, and created the <code>drf-nested-router</code> package.</p></p></div>
+    		</section>
+    	</section>
+    
+    <section class="section">
+    	<header>
+    		<h2 class='section-title'>Technical Skills</h2>
+    	</header>
+      <h3 class="section-title location">Likes:</h3>
+    	<section id="skills">
+    		<div class="item">
+    			<h3 class="name">
+    				Python
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Django
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				PostgreSQL
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Redis
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Linux
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				12Factor Apps
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Machine Learning
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Agile Management
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Teamwork
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				FaaS
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Cassandra
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				RabbitMQ
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				ElasticSearch
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Kafka
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				HTML/CSS/JS
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Rust
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Celery
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Docker
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				WebAssembly
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				GraphQL
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				RESTful APIs
+    			</h3>
+    			 		</div>
+    	</section>
+      <h3 class="section-title location">Dislikes:</h3>
+      <section>
+    		<div class="item">
+    			<h3 class="name">
+    				VB6
+    			</h3>
+    			 		</div>
+    	</section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Languages</h2>
+      </header>
+      <section id="languages">
+        <div class="display">
+          <h3 class="language">
+            English
+          </h3>
+          <div class="item">
+            <div class="level fluency fluent">
+              <em>Fluent</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="display">
+          <h3 class="language">
+            Portuguese
+          </h3>
+          <div class="item">
+            <div class="level fluency native speaker">
+              <em>Native Speaker</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="display">
+          <h3 class="language">
+            Italian
+          </h3>
+          <div class="item">
+            <div class="level fluency intermediate">
+              <em>Intermediate</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Work Experience <!--span class="item-count">(9)</span--></h2>
+      </header>
+    
+      <section id="work">
+        <section class="work-item">
+    
+          <label for="work-item-0"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Dec 2019</span>
+              <span class="endDate">- Current</span>
+            </div>
+            <div class="position">Senior Software Engineer</div>
+            <div class="company">PolySwarm</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">San Juan, Puerto Rico (remote)</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="http://polyswarm.io">http://polyswarm.io</a>
+          </span>  
+          <ul class="keywords">
+            <li>PostgreSQL</li>
+            <li>ElasticSearch</li>
+            <li>Kafka</li>
+            <li>K8s</li>
+            <li>AWS</li>
+            <li>Ethereum</li>
+            <li>Python</li>
+            <li>Typescript</li>
+            <li>Node.JS</li>
+            <li>Clickhouse</li>
+            <li>ML</li>
+            <li>Wine</li>
+            <li>Slack API</li>
+          </ul>
+          <div class="item" id="work-item">
+            <div class="summary"><p><p>Digital Security platform with a distributed antivirus aggregator that yields cripto to the antivirus authors.</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Rework or refactor of existing systems to provide the scalability needed for the business growth.</p></p></li>
+              <li><p><p>Integrate with BitGo custodian, assuring safety &amp; idempotency for no double-spending</p></p></li>
+              <li><p><p>Maintenance of internal ML models and tools</p></p></li>
+              <li><p><p>Filled gaps that made possible to list our coin NCT on Coinbase</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-1"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Mar 2017</span>
+              <span class="endDate">- Dec 2019</span>
+            </div>
+            <div class="position">Senior Python Engineer</div>
+            <div class="company">GetNinjas</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">São Paulo, SP, Brazil (hybrid)</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.getninjas.com.br/">https://www.getninjas.com.br/</a>
+          </span>  
+          <ul class="keywords">
+            <li>ML</li>
+            <li>AWS</li>
+            <li>Lambda</li>
+            <li>Terraform</li>
+            <li>Docker</li>
+            <li>K8s</li>
+            <li>RedShift</li>
+            <li>PostgreSQL</li>
+            <li>DynamoDB</li>
+            <li>Python</li>
+            <li>Flask</li>
+            <li>NodeJS</li>
+            <li>Ruby-on-Rails</li>
+            <li>Go</li>
+          </ul>
+          <div class="item" id="work-item">
+            <div class="summary"><p><p>The upcoming Data Science squad needed an experienced Software Engineer with academic research skills, that can talk and understand the Data Scientists needs and transfer this to business and tech decisions.</p></p></div>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-2"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Jun 2015</span>
+              <span class="endDate">- Feb 2017</span>
+            </div>
+            <div class="position">Senior Python Developer</div>
+            <div class="company">BooLabs, then B2W</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">São Paulo, SP, Brazil (hybrid)</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://br.linkedin.com/company/b2w---companhia-global-do-varejo">https://br.linkedin.com/company/b2w---companhia-global-do-varejo</a>
+          </span>  
+          <ul class="keywords">
+            <li>ML</li>
+            <li>visual recognition</li>
+            <li>bigdata</li>
+            <li>ecommerce</li>
+            <li>Cassandra</li>
+            <li>ElasticSearch</li>
+            <li>RabbitMQ</li>
+            <li>Kafka</li>
+            <li>Ansible</li>
+            <li>Scala</li>
+            <li>training</li>
+          </ul>
+          <div class="item" id="work-item">
+            <div class="summary"><p><p>Deep-learning and visual recognition AI shop. BooLabs developed AI products targeting retail sales market.</p><p>I received ML training from a founder, PhD in Machine Learning.</p></p></div>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-3"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Dec 2013</span>
+              <span class="endDate">- Jun 2015</span>
+            </div>
+            <div class="position">Tech Lead</div>
+            <div class="company">Omelete Group</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">São Paulo, SP, Brazil</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.omelete.com.br/">https://www.omelete.com.br/</a>
+          </span>  
+          <ul class="keywords">
+            <li>Python</li>
+            <li>Django</li>
+            <li>PostgreSQL</li>
+            <li>Redis</li>
+            <li>ElasticSearch</li>
+            <li>uwsgi</li>
+            <li>management</li>
+            <li>Foundation-Zurb</li>
+          </ul>
+          <div class="item" id="work-item">
+            <div class="summary"><p><p>Geek hardnews with 3k pages per minute of server-side pressure after a Varnish cache.</p><p>I hired, trained and lead the team that rearchitectured and implemented the full stack solution.</p></p></div>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-5"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Jul 2009</span>
+              <span class="endDate">- Current</span>
+            </div>
+            <div class="position">Developer &amp; Tech Instructor</div>
+            <div class="company">Freelance</div>
+          </header>
+    
+     
+          <ul class="keywords">
+            <li>training</li>
+            <li>management</li>
+            <li>agile</li>
+            <li>scrum</li>
+            <li>kanban</li>
+            <li>scrapping</li>
+            <li>AWS</li>
+            <li>Python</li>
+            <li>Django</li>
+            <li>Docker</li>
+            <li>GIT</li>
+            <li>Foundation-Zurb</li>
+          </ul>
+          <div class="item" id="work-item">
+            <div class="summary"><p><p>Consulting and custom software development. Mainly web apps. Heroku, AWS or locally hosted.</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Training small teams on-site during internal technology changes</p></p></li>
+              <li><p><p>Temporarily managing small startup teams when the CTO burned out</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-6"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Mar 2012</span>
+              <span class="endDate">- Nov 2012</span>
+            </div>
+            <div class="position">Software Engineer</div>
+            <div class="company">Pitzi</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">São Paulo, SP, Brazil</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.pitzi.com.br/">https://www.pitzi.com.br/</a>
+          </span>  
+          <ul class="keywords">
+            <li>UX</li>
+            <li>Ruby-on-Rails</li>
+            <li>12Factor App</li>
+            <li>PostgreSQL</li>
+            <li>Redis</li>
+          </ul>
+          <div class="item" id="work-item">
+            <div class="summary"><p><p>Growing Ruby on Rails software with the startup that brings the first Club of Service for Mobile in Brazil. Part of the founder team.</p></p></div>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-7"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Jan 2011</span>
+              <span class="endDate">- Mar 2012</span>
+            </div>
+            <div class="position">Software Developer</div>
+            <div class="company">Rede Colibri</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">São Paulo, SP, Brazil</span>
+     
+          <ul class="keywords">
+            <li>Python</li>
+            <li>Django</li>
+            <li>Celery</li>
+            <li>PostgreSQL</li>
+            <li>WebSockets</li>
+            <li>Linux</li>
+            <li>AWS</li>
+          </ul>
+          <div class="item" id="work-item">
+            <div class="summary"><p><p>Real Estate startup. Brings the MLS model to Brazil in a way that brazilian brokers can enjoy and profit.</p></p></div>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-8"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">May 2006</span>
+              <span class="endDate">- Jul 2009</span>
+            </div>
+            <div class="position">Computer Technician, then Infrastructure Lead</div>
+            <div class="company">Universidade Federal do ABC - UFABC</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">Santo André, São Paulo, Brazil</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.ufabc.edu.br/">https://www.ufabc.edu.br/</a>
+          </span>  
+          <ul class="keywords">
+            <li>management</li>
+            <li>cloud</li>
+            <li>infra</li>
+            <li>Linux</li>
+            <li>VoIP</li>
+          </ul>
+          <div class="item" id="work-item">
+            <div class="summary"><p><p>Leader of the Network Infrastructure Team, in direct relationship with 1st and 2nd management levels, leading up to 10 team members distributed among 4 sites.</p></p></div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Education <span class="item-count">(2)</span></h2>
+      </header>
+    
+      <section id="education">
+        <section class="education-item">
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">
+              2006
+              </span>
+              <span class="endDate">
+              - 2009
+              </span>
+            </div>
+            <div class="header-left">
+              <div class="studyType">
+                Bachelor
+              </div>
+              <div class="area">
+                of Information Technology Systems
+              </div>
+              <div class="institution">
+                Universidade de São Paulo - USP
+              </div>
+            </div>
+          </header>
+    
+    
+          <ul class="courses">
+            <li>Software Engineering</li>
+            <li>Project Management</li>
+            <li>Machine Learning</li>
+            <li>User Experience</li>
+          </ul>
+    
+          <div class="item">
+          </div>
+        </section>
+        <section class="education-item">
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">
+              2003
+              </span>
+              <span class="endDate">
+              - 2004
+              </span>
+            </div>
+            <div class="header-left">
+              <div class="studyType">
+                Tech High School
+              </div>
+              <div class="area">
+                with Data Processing
+              </div>
+              <div class="institution">
+                Escola Técnica Estadual &quot;Lauro Gomes&quot; - ETELG
+              </div>
+            </div>
+          </header>
+    
+    
+          <ul class="courses">
+            <li>C++</li>
+            <li>Python</li>
+          </ul>
+    
+          <div class="item">
+          </div>
+        </section>
+      </section>
+    </section>
+      <section class="section">
+        <header>
+          <h2 class="section-title">Certificates</h2>
+        </header>
+        <section id="certificates">
+            <section class="certificate-item">
+              <header class="clear">
+                <div class="header-left">
+                    <div class="name">
+                      LPIC-1
+                    </div>
+                    <div class="issuer">
+                      Linux Professional Institute
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+              </div>
+            </section>
+        </section>
+      </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Publications</h2>
+      </header>
+      <section id="publications">
+        <section class="publication-item">
+          <label for="publication-item-0"></label>
+    
+          <header class="clear">
+            <span class="date">
+              3 Oct 2017
+            </span>
+            <div class="header-left">
+              <span class="name">
+                Go vs CPython: Visual comparison of concurrency and parallelism options
+              </span>
+                <span>in</span>
+                <span class="website">
+                  <!--span class="fas fa-external-link-alt"></span-->
+                  <a target="_blank" href="https://labs.getninjas.com.br/go-vs-cpython-visual-comparison-of-concurrency-and-parallelism-d29a1ebec20a">labs.getninjas.com.br</a>
+                </span>
+            </div>
+    
+          </header>
+    
+          <div class="item">
+          </div>
+        </section>
+        <section class="publication-item">
+          <label for="publication-item-1"></label>
+    
+          <header class="clear">
+            <span class="date">
+              13 Jul 2016
+            </span>
+            <div class="header-left">
+              <span class="name">
+                BooViews: Aspect-based Sentiment Analysis on Product Reviews combining SVM and CRF in Portuguese
+              </span>
+                <span>in</span>
+                <span class="website">
+                  <!--span class="fas fa-external-link-alt"></span-->
+                  <a target="_blank" href="http://propor2016.di.fc.ul.pt/wp-content/uploads/2016/07/GuilhermeNobrePROPORSRW2016.pdf">PROPOR 2016 - International Conference on the Computational Processing of Portuguese</a>
+                </span>
+            </div>
+    
+          </header>
+    
+          <div class="item">
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title' class='section-title'>Tools</h2>
+      </header>
+      <section id="interests">
+        <div class="item">
+          <h3 class="name">
+            first computer
+          </h3>
+            <div class="summary"><p><p>486 DX2 66</p></p></div>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            favorite editor
+          </h3>
+            <div class="summary"><p><p>VSCodium w/ vim emulation</p></p></div>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            current book
+          </h3>
+            <div class="summary"><p><p>30-Second Archtecture</p><p>(Edward Denison)</p></p></div>
+        </div>
+      </section>
+    </section>
+
+  </body>
+</html>
