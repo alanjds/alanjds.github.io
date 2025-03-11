@@ -372,6 +372,7 @@ section .location {
   padding: 0.1em 0;
   color: #606d76;
   font-weight: 400;
+  float: right;
 }
 
 .keywords,
@@ -627,6 +628,10 @@ section .location {
     margin: 2rem auto;
   }
 
+  #languages .item, #skills .item, #interests .item {
+    width: 19em;
+  }
+
   .section>section>header .space-left {
     opacity: 1;
     cursor: pointer;
@@ -667,9 +672,9 @@ section .location {
 }
 
 @media print {
-  #profiles a:not(.hide-href-print)::after {
+  /*#profiles_ a:not(.hide-href-print)::after {
     content: " (" attr(href) ") ";
-  }
+  }*/
 
   #resume {
     margin: 0.1em;
@@ -695,8 +700,9 @@ section .location {
   }
 
   .main-summary {
-    padding: 0;
-    background: transparent;
+    //padding: 0; //1em;
+    //margin-left: -0.5em;
+    //background: transparent;
   }
 
   .section {
@@ -760,15 +766,31 @@ section .location {
   #skills .item {
     width: calc(100% / 3);
     padding: 0;
+    padding-bottom: 0.4em;
+    font-size: 0.4rem;
   }
 
+  #skills .item h3, #skills~section .item h3 {
+    font-size: 1rem;
+  }
+
+  #languages > div {
+    width: calc(100% / 3);
+  }
+
+  #interests .item {
+    width: calc(100% / 3);
+    padding: 0;
+    padding-bottom: 0.4em;
+    //font-size: 0.4rem;
+  }
   .highlights {
     margin: 0.5em 0 0 0;
   }
 
-  ul.keywords::before {
+  /*ul.keywords::before {
     content: "Skills acquired: ";
-  }
+  }*/
 
   #skills .keywords::before {
     content: none;
@@ -793,9 +815,9 @@ section .location {
     padding: 0.1em 0;
   }
 
-  .level .bar {
+  /*.level .bar {
     display: none;
-  }
+  }*/
 
   #profiles .item {
     padding: 0;
@@ -808,6 +830,13 @@ section .location {
 
   .fa-map-marker-alt:before {
     padding-left: 0.1em;
+  }
+  
+  .fa-map-marker-alt {
+    font-size: 70%;
+  }
+  .location, .url {
+    font-size: 75%;
   }
 }
 
@@ -879,7 +908,7 @@ section .location {
     
     	<section class="section">
     		<section class="main-summary">
-    			<div><p><p>I am a Software Engineer experienced with Python and skills on the full stack &amp; machine learning. Coding commercial Python since 2008, right after leading an infra team to create a XEN cloud. When allowed, I target to build products made to scale.</p><p>Now, I do what is needed from cloud-or-not DevOps to intermediate HTML/CSS/JS coding, mainly using Postgres+Redis and Django or Flask on the backend, although preferring async options.</p><p>Also worked with machine learning and published a paper at an international academic conference.</p><p>I try to merge back my bugfixes when possible. This way I contributed to many projects like Celery, Cassandra, Ansible, DRF, Kivy &amp; RustPython among others, and created the <code>drf-nested-router</code> package.</p></p></div>
+    			<div><p><p>I am a Software Engineer experienced but not limited to Python, with skills on the full stack &amp; machine learning. Coding commercial Python for more than 17 years, right after leading my infra team to create a XEN cloud. When allowed, am used to design, build, and maintain highly reliable systems that scale to millions of requests per second (RPS).</p><p> </p><p>Now I do what gets needed from cloud-or-not DevOps to intermediate HTML/CSS/JS, mainly using Postgres+Redis and Django or Flask or FastAPI on the backend. Usualy with queue-driven and event-driven async designs. Also worked with machine learning and published a paper at an international academic conference.</p><p> </p><p>I try to proactively collaborate my bugfixes to opensource initiatives when possible. This way I contributed to many projects like Celery, Cassandra, Ansible, DRF, Kivy &amp; RustPython among others, and created the <code>drf-nested-router</code> package used by more than 2000 projects including Mozilla Addons server and OpenCVE.</p></p></div>
     		</section>
     	</section>
     
@@ -897,6 +926,11 @@ section .location {
     		<div class="item">
     			<h3 class="name">
     				Django
+    			</h3>
+    			 		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				FastAPI
     			</h3>
     			 		</div>
     		<div class="item">
@@ -932,11 +966,6 @@ section .location {
     		<div class="item">
     			<h3 class="name">
     				Teamwork
-    			</h3>
-    			 		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				FaaS
     			</h3>
     			 		</div>
     		<div class="item">
@@ -1085,11 +1114,11 @@ section .location {
             <li>Slack API</li>
           </ul>
           <div class="item" id="work-item">
-            <div class="summary"><p><p>Digital Security platform with a distributed antivirus aggregator that yields cripto to the antivirus authors.</p></p></div>
+            <div class="summary"><p><p>Digital Security platform with a distributed antivirus aggregator yielding cripto to antivirus authors. Serving corporations and governments.</p></p></div>
             <ul class="highlights">
               <li><p><p>Rework or refactor of existing systems to provide the scalability needed for the business growth.</p></p></li>
               <li><p><p>Integrate with BitGo custodian, assuring safety &amp; idempotency for no double-spending</p></p></li>
-              <li><p><p>Maintenance of internal ML models and tools</p></p></li>
+              <li><p><p>Maintenance of internal Machine Learning models and tools</p></p></li>
               <li><p><p>Filled gaps that made possible to list our coin NCT on Coinbase</p></p></li>
             </ul>
           </div>
@@ -1130,7 +1159,7 @@ section .location {
             <li>Go</li>
           </ul>
           <div class="item" id="work-item">
-            <div class="summary"><p><p>The upcoming Data Science squad needed an experienced Software Engineer with academic research skills, that can talk and understand the Data Scientists needs and transfer this to business and tech decisions.</p></p></div>
+            <div class="summary"><p><p>Hired as the experienced Software Engineer with academic research skills needed by the Data Science squad. Worked by talking and understanding the Data Scientists needs and transfering this to business and tech decisions.</p></p></div>
           </div>
         </section>
         <section class="work-item">
@@ -1199,7 +1228,7 @@ section .location {
             <li>Foundation-Zurb</li>
           </ul>
           <div class="item" id="work-item">
-            <div class="summary"><p><p>Geek hardnews with 3k pages per minute of server-side pressure after a Varnish cache.</p><p>I hired, trained and lead the team that rearchitectured and implemented the full stack solution.</p></p></div>
+            <div class="summary"><p><p>Geek news portal with 3000 pages per minute of server-side pressure after a Varnish cache.</p><p>I hired, trained and lead the team that rearchitected and implemented the full stack solution.</p></p></div>
           </div>
         </section>
         <section class="work-item">
@@ -1226,6 +1255,7 @@ section .location {
             <li>AWS</li>
             <li>Python</li>
             <li>Django</li>
+            <li>FastAPI</li>
             <li>Docker</li>
             <li>GIT</li>
             <li>Foundation-Zurb</li>
@@ -1265,7 +1295,7 @@ section .location {
             <li>Redis</li>
           </ul>
           <div class="item" id="work-item">
-            <div class="summary"><p><p>Growing Ruby on Rails software with the startup that brings the first Club of Service for Mobile in Brazil. Part of the founder team.</p></p></div>
+            <div class="summary"><p><p>The first Club of Service for Mobile in Brazil. I was part of the founder team.</p></p></div>
           </div>
         </section>
         <section class="work-item">
@@ -1294,7 +1324,7 @@ section .location {
             <li>AWS</li>
           </ul>
           <div class="item" id="work-item">
-            <div class="summary"><p><p>Real Estate startup. Brings the MLS model to Brazil in a way that brazilian brokers can enjoy and profit.</p></p></div>
+            <div class="summary"><p><p>Real Estate startup. Bringing the MLS model from USA to Brazil.</p></p></div>
           </div>
         </section>
         <section class="work-item">
@@ -1324,14 +1354,14 @@ section .location {
             <li>VoIP</li>
           </ul>
           <div class="item" id="work-item">
-            <div class="summary"><p><p>Leader of the Network Infrastructure Team, in direct relationship with 1st and 2nd management levels, leading up to 10 team members distributed among 4 sites.</p></p></div>
+            <div class="summary"><p><p>Leader of the Network Infrastructure Team of up to 10 members distributed among 4 sites. In direct relationship with 1st and 2nd management levels</p></p></div>
           </div>
         </section>
       </section>
     </section>
     <section class="section">
       <header>
-        <h2 class='section-title'>Education <span class="item-count">(2)</span></h2>
+        <h2 class='section-title'>Education <!--span class="item-count">(2)</span--></h2>
       </header>
     
       <section id="education">
@@ -1369,62 +1399,8 @@ section .location {
           <div class="item">
           </div>
         </section>
-        <section class="education-item">
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">
-              2003
-              </span>
-              <span class="endDate">
-              - 2004
-              </span>
-            </div>
-            <div class="header-left">
-              <div class="studyType">
-                Tech High School
-              </div>
-              <div class="area">
-                with Data Processing
-              </div>
-              <div class="institution">
-                Escola Técnica Estadual &quot;Lauro Gomes&quot; - ETELG
-              </div>
-            </div>
-          </header>
-    
-    
-          <ul class="courses">
-            <li>C++</li>
-            <li>Python</li>
-          </ul>
-    
-          <div class="item">
-          </div>
-        </section>
       </section>
     </section>
-      <section class="section">
-        <header>
-          <h2 class="section-title">Certificates</h2>
-        </header>
-        <section id="certificates">
-            <section class="certificate-item">
-              <header class="clear">
-                <div class="header-left">
-                    <div class="name">
-                      LPIC-1
-                    </div>
-                    <div class="issuer">
-                      Linux Professional Institute
-                    </div>
-                </div>
-              </header>
-    
-              <div class="item">
-              </div>
-            </section>
-        </section>
-      </section>
     <section class="section">
       <header>
         <h2 class='section-title'>Publications</h2>
@@ -1499,7 +1475,7 @@ section .location {
           <h3 class="name">
             current book
           </h3>
-            <div class="summary"><p><p>30-Second Archtecture</p><p>(Edward Denison)</p></p></div>
+            <div class="summary"><p><p>L'orto Autoirrigante</p><p>(Alessandro Ronca et al.)</p></p></div>
         </div>
       </section>
     </section>
