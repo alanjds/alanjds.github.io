@@ -1,0 +1,396 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Alan Justino da Silva",
+    "label": "Senior Software Engineer",
+    "image": "",
+    "email": "alan.justino@yahoo.com.br",
+    "phone": "+55 (11) 998-225-769",
+    "url": "",
+    "summary": "I am a Software Engineer experienced but not limited to Python, with skills on the full stack & machine learning. Coding commercial Python for more than 17 years, right after leading my infra team to create a XEN cloud. When allowed, am used to design, build, and maintain highly reliable systems that scale to millions of requests per second (RPS).\n&nbsp;\n Now I do what gets needed from cloud-or-not DevOps to intermediate HTML/CSS/JS, mainly using Postgres+Redis and Django or Flask or FastAPI on the backend. Usualy with queue-driven and event-driven async designs. Also worked with machine learning and published a paper at an international academic conference.\n&nbsp;\nI try to proactively collaborate my bugfixes to opensource initiatives when possible. This way I contributed to many projects like Celery, Cassandra, Ansible, DRF, Kivy & RustPython among others, and created the `drf-nested-router` package used by more than 2000 projects including Mozilla Addons server and OpenCVE.",
+    "location": {
+      "city": "São Caetano do Sul",
+      "countryCode": "Brazil",
+      "region": "São Paulo,"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "alanjustino",
+        "url": "https://www.linkedin.com/in/alanjustino/"
+      },
+      {
+        "network": "Github",
+        "username": "alanjds",
+        "url": "https://github.com/alanjds"
+      },
+      {
+        "network": "stack-overflow",
+        "username": "alanjds",
+        "url": "https://stackoverflow.com/users/798575/alanjds"
+      },
+      {
+        "network": "lastfm",
+        "username": "alanjds",
+        "url": "https://www.last.fm/user/alanjds"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "PolySwarm",
+      "location": "San Juan, Puerto Rico (remote)",
+      "position": "Senior Software Engineer",
+      "url": "http://polyswarm.io",
+      "startDate": "2019-12-01",
+      "endDate": "",
+      "keywords": [
+        "PostgreSQL",
+        "ElasticSearch",
+        "Kafka",
+        "K8s",
+        "AWS",
+        "Ethereum",
+        "Python",
+        "Typescript",
+        "Node.JS",
+        "Clickhouse",
+        "ML",
+        "Wine",
+        "Slack API"
+      ],
+      "summary": "Digital Security platform with a distributed antivirus aggregator yielding cripto to antivirus authors. Serving corporations and governments.",
+      "highlights": [
+        "Rework or refactor of existing systems to provide the scalability needed for the business growth.",
+        "Integrate with BitGo custodian, assuring safety & idempotency for no double-spending",
+        "Maintenance of internal Machine Learning models and tools",
+        "Filled gaps that made possible to list our coin NCT on Coinbase"
+      ]
+    },
+    {
+      "name": "GetNinjas",
+      "position": "Senior Python Engineer",
+      "startDate": "2017-03-31",
+      "endDate": "2019-12-31",
+      "keywords": [
+        "ML",
+        "AWS",
+        "Lambda",
+        "Terraform",
+        "Docker",
+        "K8s",
+        "RedShift",
+        "PostgreSQL",
+        "DynamoDB",
+        "Python",
+        "Flask",
+        "NodeJS",
+        "Ruby-on-Rails",
+        "Go"
+      ],
+      "highlights": [
+        "Most of the job challenge was about preparing the infra dept for the Data Science specifics, and negotiating with Data Scientists to adhere to the company standards",
+        "Become the _Agilist Facilitator_ of the Platform team"
+      ],
+      "highlights-hidden": true,
+      "summary": "Hired as the experienced Software Engineer with academic research skills needed by the Data Science squad. Worked by talking and understanding the Data Scientists needs and transfering this to business and tech decisions.",
+      "url": "https://www.getninjas.com.br/",
+      "location": "São Paulo, SP, Brazil (hybrid)"
+    },
+    {
+      "name": "BooLabs, then B2W",
+      "position": "Senior Python Developer",
+      "startDate": "2015-06-30",
+      "endDate": "2017-02-28",
+      "keywords": [
+        "ML",
+        "visual recognition",
+        "bigdata",
+        "ecommerce",
+        "Cassandra",
+        "ElasticSearch",
+        "RabbitMQ",
+        "Kafka",
+        "Ansible",
+        "Scala",
+        "training"
+      ],
+      "summary": "Deep-learning and visual recognition AI shop. BooLabs developed AI products targeting retail sales market.\n I received ML training from a founder, PhD in Machine Learning.",
+      "highlights": [
+        "There I received ML training from an founder, PhD in ML",
+        "There I trained several team members for Python proficiency up to metaprograming",
+        "Aquired in 2016 by B2W, the largest ecommerce of LATAM, forming its _Labs Innovation_ dept.",
+        "In JUL 2016 the Labs dept published a paper in the international PROPOR academic conference. I am an author of it."
+      ],
+      "highlights-hidden": true,
+      "url": "https://br.linkedin.com/company/b2w---companhia-global-do-varejo",
+      "location": "São Paulo, SP, Brazil (hybrid)"
+    },
+    {
+      "name": "Omelete Group",
+      "position": "Tech Lead",
+      "startDate": "2013-12-31",
+      "endDate": "2015-06-30",
+      "keywords": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "Redis",
+        "ElasticSearch",
+        "uwsgi",
+        "management",
+        "Foundation-Zurb"
+      ],
+      "highlights": [
+        "Had to evolve some external opensource parts on the process, like Disqus integration",
+        "Via software, fixed the weaknesses of the 3rd-party infra provider"
+      ],
+      "highlights-hidden": true,
+      "summary": "Geek news portal with 3000 pages per minute of server-side pressure after a Varnish cache.\n I hired, trained and lead the team that rearchitected and implemented the full stack solution.",
+      "url": "https://www.omelete.com.br/",
+      "location": "São Paulo, SP, Brazil"
+    },
+    {
+      "name": "SENAC (Commerce' Guild Social Service)",
+      "position": "Specialist Teacher",
+      "startDate": "2012-11-30",
+      "endDate": "2013-01-31",
+      "keywords": ["training", "SQL"],
+      "summary": "Teaching data modeling with relational databases and SQL. Teaching backend languages for the web.\n\n(Disclaimer: Senac's contract model is of 3 months per venture, then quarantine)",
+      "url": "https://www.sp.senac.br/",
+      "location": "Santo André, São Paulo, Brazil",
+      "hidden": true
+    },
+    {
+      "name": "Freelance",
+      "position": "Developer & Tech Instructor",
+      "startDate": "2009-07-31",
+      "endDate": "",
+      "keywords": [
+        "training",
+        "management",
+        "agile",
+        "scrum",
+        "kanban",
+        "scrapping",
+        "AWS",
+        "Python",
+        "Django",
+        "FastAPI",
+        "Docker",
+        "GIT",
+        "Foundation-Zurb"
+      ],
+      "highlights": [
+        "Training small teams on-site during internal technology changes",
+        "Temporarily managing small startup teams when the CTO burned out"
+      ],
+      "summary": "Consulting and custom software development. Mainly web apps. Heroku, AWS or locally hosted.",
+      "url": ""
+    },
+    {
+      "name": "Pitzi",
+      "position": "Software Engineer",
+      "startDate": "2012-03-31",
+      "endDate": "2012-11-30",
+      "keywords": [
+        "UX",
+        "Ruby-on-Rails",
+        "12Factor App",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "summary": "The first Club of Service for Mobile in Brazil. I was part of the founder team.",
+      "url": "https://www.pitzi.com.br/",
+      "location": "São Paulo, SP, Brazil"
+    },
+    {
+      "name": "Rede Colibri",
+      "position": "Software Developer",
+      "startDate": "2011-01-31",
+      "endDate": "2012-03-31",
+      "highlights": [],
+      "keywords": [
+        "Python",
+        "Django",
+        "Celery",
+        "PostgreSQL",
+        "WebSockets",
+        "Linux",
+        "AWS"
+      ],
+      "summary": "Real Estate startup. Bringing the MLS model from USA to Brazil.",
+      "url": "",
+      "location": "São Paulo, SP, Brazil"
+    },
+    {
+      "name": "Universidade Federal do ABC - UFABC",
+      "position": "Computer Technician, then Infrastructure Lead",
+      "startDate": "2006-05-31",
+      "endDate": "2009-07-31",
+      "highlights": [],
+      "keywords": ["management", "cloud", "infra", "Linux", "VoIP"],
+      "summary": "Leader of the Network Infrastructure Team of up to 10 members distributed among 4 sites. In direct relationship with 1st and 2nd management levels",
+      "url": "https://www.ufabc.edu.br/",
+      "location": "Santo André, São Paulo, Brazil"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Universidade de São Paulo - USP",
+      "url": "https://www.usp.br/",
+      "area": "of Information Technology Systems",
+      "studyType": "Bachelor",
+      "startDate": "2006-01-01",
+      "endDate": "2009-12-30",
+      "score": "",
+      "courses": [
+        "Software Engineering",
+        "Project Management",
+        "Machine Learning",
+        "User Experience"
+      ]
+    },
+    {
+      "institution": "Escola Técnica Estadual \"Lauro Gomes\" - ETELG",
+      "area": "with Data Processing",
+      "studyType": "Tech High School",
+      "startDate": "2003-12-31",
+      "endDate": "2004-12-31",
+      "score": "",
+      "courses": [
+        "C++",
+        "Python"
+      ],
+      "hidden": true
+    }
+  ],
+  "awards": [],
+  "certificates_hidden": true,
+  "certificates": [
+    {
+      "name": "LPIC-1",
+      "issuer": "Linux Professional Institute",
+      "endDate": "2012-07-31",
+      "startDate": "2007-07-31"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Go vs CPython: Visual comparison of concurrency and parallelism options",
+      "publisher": "labs.getninjas.com.br",
+      "releaseDate": "2017-10-03",
+      "summary": "Using MPG diagrams to see the differences between Threading, Multiprocessing and Asyncio, the 3 official CPython options, and Go Runtime Goroutines behaviours. Animated GIFs included!!\n\nThe article was used as input for the PythonBrasil 2017 presentation available on https://youtu.be/su62_FkIsrg (slides on http://slides.com/alanjds/grumpy-pybr2017)",
+      "summary-hidden": true,
+      "url": "https://labs.getninjas.com.br/go-vs-cpython-visual-comparison-of-concurrency-and-parallelism-d29a1ebec20a"
+    },
+    {
+      "name": "BooViews: Aspect-based Sentiment Analysis on Product Reviews combining SVM and CRF in Portuguese",
+      "publisher": "PROPOR 2016 - International Conference on the Computational Processing of Portuguese",
+      "releaseDate": "2016-07-13",
+      "url": "http://propor2016.di.fc.ul.pt/wp-content/uploads/2016/07/GuilhermeNobrePROPORSRW2016.pdf",
+      "summary": "Are covered techniques to classify reviews polarity, extract product aspects and classify them. The resulting SVM classifier got 91.7% of precision in classifying the sentiment of the reviews, 74.2% of F1‐score using CRF to extract the product aspects and 79.9% of precision classifying aspect’s polarity.",
+      "summary-hidden": true
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python"
+    },
+    {
+      "name": "Django"
+    },
+    {
+      "name": "FastAPI"
+    },
+    {
+      "name": "PostgreSQL"
+    },
+    {
+      "name": "Redis"
+    },
+    {
+      "name": "Linux"
+    },
+    {
+      "name": "12Factor Apps"
+    },
+    {
+      "name": "Machine Learning"
+    },
+    {
+      "name": "Agile Management"
+    },
+    {
+      "name": "Teamwork"
+    },
+    {
+      "name": "Cassandra"
+    },
+    {
+      "name": "RabbitMQ"
+    },
+    {
+      "name": "ElasticSearch"
+    },
+    {
+      "name": "Kafka"
+    },
+    {
+      "name": "HTML/CSS/JS"
+    },
+    {
+      "name": "Rust"
+    },
+    {
+      "name": "Celery"
+    },
+
+    {
+      "name": "Docker"
+    },
+    {
+      "name": "WebAssembly"
+    },
+    {
+      "name": "GraphQL"
+    },
+    {
+      "name": "RESTful APIs"
+    },
+    {
+      "name": "VB6",
+      "disliked": true
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Portuguese",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "Italian",
+      "fluency": "Intermediate"
+    }
+  ],
+  "interests": [],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json",
+    "theme": "jsonresume-theme-stackoverflow",
+    "tools": [
+      { "name": "first computer", "value": "486 DX2 66" },
+      { "name": "favorite editor", "value": "VSCodium w/ vim emulation" },
+      {
+        "name": "current book",
+        "value": "L'orto Autoirrigante\n(Alessandro Ronca et al.)"
+      }
+    ]
+  }
+}
